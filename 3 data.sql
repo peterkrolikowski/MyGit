@@ -6,7 +6,6 @@ merge into dbo.lookups as trg using
 ) as src on trg.id = src.id 
 	when not matched
 	when matched set trg.DataSource = src.ds;
-	
 go
 
 
