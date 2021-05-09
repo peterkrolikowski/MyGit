@@ -7,6 +7,8 @@ merge into dbo.lookups as trg using
 	when not matched
 	when matched set trg.DataSource = src.ds;
 	
+-- adding some changes	
+	
 go
 
 
